@@ -10,9 +10,6 @@ RUN npm install
 COPY . .
 
 RUN npm run build
-
-# remove devlopment dependencies
-RUN npm prune --production
  
 EXPOSE 3000
 
